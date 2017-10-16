@@ -13,4 +13,6 @@ Imports: readxl,
     assertthat,
     prenoms,
     dplyr,
-    tidyr
+    tidyr,
+    ggplot2,
+    dygraphs

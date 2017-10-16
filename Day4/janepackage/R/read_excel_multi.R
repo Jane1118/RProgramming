@@ -1,7 +1,7 @@
 #' import all sheets from an excel file
 #'
 #' @param file path to xlsx file
-#' @import readxl
+#' @import readxl assertthat
 #'
 #'
 #' @return a list
@@ -15,6 +15,7 @@
 #'
 #'
 read_excel_multi <- function(file){
+  assert_that(not_empty(file))
   all_sheets <- readxl::excel_sheets(file)
   result <- lapply(all_sheets, function(sheet){
     readxl::read_excel(file, sheet = sheet)
