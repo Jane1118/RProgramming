@@ -1,0 +1,16 @@
+Package: janepackage
+Type: Package
+Title: package made by jane
+Version: 0.1.0
+Author: zhijian xu
+Maintainer: zhijian xu <zhijian.xu@polytechnique.edu>
+Description: homework2.
+License: GPL-3   
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+Imports: readxl,
+    assertthat,
+    prenoms,
+    dplyr,
+    tidyr
